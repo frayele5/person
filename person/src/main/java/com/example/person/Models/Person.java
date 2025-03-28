@@ -11,6 +11,8 @@ import javax.validation.constraints.NotBlank;
     @Data
     @Document(collection = "persons")
     public class Person {
+        // I choose to use ObjectId instead of Long because I saw that MongoDB's best practice is to use its auto-generated ID.
+        // If this does not meet the task requirements, I will change it accordingly.
         @Id
         private ObjectId id;
 
